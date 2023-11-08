@@ -1,0 +1,38 @@
+<body>
+    <div>   
+        <div *ngIf="true">Ahmad is true</div>
+    </div>
+
+    <br><br><br>
+    <!-- --------------------------------------------------- -->
+    <p>new!</p> 
+    <br><br><br>
+    <div *ngIf="isLogIn; else isLogOut"> 
+       Hello you are  in.
+    </div>
+    <ng-template #isLogOut> 
+       You're out.
+    </ng-template>
+    
+    <!-- --------------------------------------------------- -->
+    
+    <br>
+    <br>
+    <br>
+    <h2>listing</h2> 
+    <ul> 
+       <li *ngFor="let n of names">
+          {{n}} 
+       </li>
+    </ul>
+    <ul> 
+       <li *ngFor="let l of nums">
+          {{l}} 
+       </li>
+    </ul>
+    
+    <br><br><br>
+    
+
+    
+</body>

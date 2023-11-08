@@ -1,0 +1,30 @@
+<body>
+  <p>{{name}}</p>
+
+<br><br><br>
+
+<ul> 
+    <li *ngFor="let student of studentArr; trackBy: tracking">
+       {{student.name}} 
+    </li>
+ </ul>
+
+<button type="button" style="margin: 10px;" (click)="onClickMe()">button 1</button>
+<p>{{clickMessage}}</p>
+
+<div class="card" *ngFor="let student of studentArr">
+
+   <div class="id">
+      {{student.id}}
+   </div>
+
+   <div class="name">
+      {{student.name}}
+   </div>
+
+   <div class="movies" *ngIf="student.movies">
+      Movies: {{student.movies}} 
+   </div>
+
+</div>
+</body>

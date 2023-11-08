@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'client';
+  name?: string
+  age?: number;
+  students: { name?: string, age?: number }[] = []
+
+  onClick(st: { name?: string, age?: number }) {
+    this.students.push(st);
+  }
+
 }

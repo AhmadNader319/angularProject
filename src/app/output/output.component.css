@@ -1,0 +1,31 @@
+body{
+    background-color: blanchedalmond;
+}
+/* Card styles */
+
+.card {
+    width: auto;
+    margin: 20px;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  /* Element styles */
+  
+  .id, .name,.movies {
+    margin: 10px;
+  }
+  
+  .id {
+    font-weight: bold;
+  }
+  
+  .name {
+    font-size: 12px;
+  }
+  
+  .movies {
+    color: red;
+  }
