@@ -33,7 +33,7 @@ export class OutputComponent {
  ]; 
  // Method to track student id + name + movies if found
  tracking(index:number, studentArr:any): number { 
-    return studentArr.id+studentArr.name+studentArr.movies; 
+    return studentArr.id; 
  }
  // Property to hold click message
  clickMessage = '';
@@ -41,7 +41,18 @@ export class OutputComponent {
  onClickMe() {
    this.clickMessage = 'First message lesgoooo!';
  }
+ 
+ number = 20;
 
+ reset() {
+   this.number = 0;
+ }
+ setToOneHundred(){
+   this.number=100;
+ }
+ increase() {
+   this.number++;
+ }
 }
 
 

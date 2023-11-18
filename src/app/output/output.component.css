@@ -29,3 +29,8 @@ body{
   .movies {
     color: red;
   }
+.btn{
+  margin: 5px;
+  padding: 3px;
+  background-color: whitesmoke;
+}

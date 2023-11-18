@@ -4,8 +4,8 @@
 <br><br><br>
 
 <ul> 
-    <li *ngFor="let student of studentArr; trackBy: tracking">
-       {{student.name}} 
+    <li  *ngFor="let student of studentArr; trackBy: tracking">
+       {{student.tracking}} 
     </li>
  </ul>
 
@@ -27,4 +27,11 @@
    </div>
 
 </div>
+<h2>Source code version</h2>
+    <button class = "btn" type="button" (click)="reset()">reset</button>
+    <button class = "btn" type="button" (click)="increase()">increase</button>
+    <button class = "btn" type="button" (click)="setToOneHundred()">set to 100</button>
+    
+    <p>counter = {{number}}</p>
+
 </body>
