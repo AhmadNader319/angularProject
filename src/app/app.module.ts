@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { InputComponent } from './input/input.component';
 import { OutputComponent } from './output/output.component';
-
+import { stdComponent } from './student/student.component';
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
     OutputComponent,
+    stdComponent,
   ],
   imports: [
     BrowserModule,
